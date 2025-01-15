@@ -15,7 +15,7 @@ class LoginBg extends StatelessWidget {
           height:  double.infinity,
           decoration: BoxDecoration(
               image: DecorationImage(image: AssetImage(img), fit: BoxFit.cover)),
-          child: SingleChildScrollView(child: widget),
+          child: widget,
         ),
        
     );

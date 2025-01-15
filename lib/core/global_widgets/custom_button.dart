@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 
 import '../const/app_colors.dart';
 
+// ignore: must_be_immutable
 class customButtonWidget extends StatelessWidget {
   String hint;
   VoidCallback function;
