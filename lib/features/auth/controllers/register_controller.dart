@@ -6,6 +6,7 @@ class RegisterController extends GetxController{
    TextEditingController emailController = TextEditingController();
    TextEditingController passwordController = TextEditingController();
    TextEditingController confirmPasswordController = TextEditingController();
+   TextEditingController companyTagController = TextEditingController();
 
    FocusNode nameNode = FocusNode();
    FocusNode emailNode = FocusNode();
