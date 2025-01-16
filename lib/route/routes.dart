@@ -1,4 +1,6 @@
-import 'package:demon_project_2/features/auth/views/login_view.dart';
+import 'package:demon_project_2/features/auth/views/login/view/login_view.dart';
+import 'package:demon_project_2/features/auth/views/register.dart';
+import 'package:demon_project_2/features/auth/views/role.dart';
 import 'package:demon_project_2/features/on_boarding/views/on_boarding_10.dart';
 import 'package:demon_project_2/features/on_boarding/views/on_boarding_8.dart';
 import 'package:demon_project_2/features/on_boarding/views/on_boarding_9.dart';
@@ -12,6 +14,7 @@ class AppPages {
   static String getOnBoarding9Screen() => AppRoutes.onBoarding9;
   static String getOnBoarding10Screen() => AppRoutes.onBoarding10;
   static String getLogin() => AppRoutes.login;
+  static String role() => AppRoutes.role;
 
   static List<GetPage> routes = [
     GetPage(name: AppRoutes.splashScreen, page: () => Splash()),
@@ -31,5 +34,10 @@ class AppPages {
       name: AppRoutes.login,
       page: () => LoginView(),
     ),
+    GetPage(
+      name: AppRoutes.role,
+      page: () => Role(),
+    ),
+    GetPage(name: AppRoutes.register, page: () => RegisterScreen(),)
   ];
 }

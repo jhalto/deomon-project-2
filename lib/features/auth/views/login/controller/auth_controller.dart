@@ -6,5 +6,8 @@ class AuthController extends GetxController {
   TextEditingController passwordController = TextEditingController();
   FocusNode emailNode = FocusNode();
   FocusNode passWordNode = FocusNode();
+
+  RxBool isSelectedCompany = false.obs;
+  RxBool isSelectedIndividual = false.obs;
   
 }
