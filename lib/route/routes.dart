@@ -1,3 +1,4 @@
+import 'package:demon_project_2/features/auth/views/create_company.dart';
 import 'package:demon_project_2/features/auth/views/login/view/login_view.dart';
 import 'package:demon_project_2/features/auth/views/register.dart';
 import 'package:demon_project_2/features/auth/views/role.dart';
@@ -15,7 +16,8 @@ class AppPages {
   static String getOnBoarding10Screen() => AppRoutes.onBoarding10;
   static String getLogin() => AppRoutes.login;
   static String role() => AppRoutes.role;
-
+  static String register() => AppRoutes.register;
+  static String createCompany() => AppRoutes.createCompany;
   static List<GetPage> routes = [
     GetPage(name: AppRoutes.splashScreen, page: () => Splash()),
     GetPage(
@@ -38,6 +40,8 @@ class AppPages {
       name: AppRoutes.role,
       page: () => Role(),
     ),
-    GetPage(name: AppRoutes.register, page: () => RegisterScreen(),)
+    GetPage(name: AppRoutes.register, page: () => RegisterScreen(),),
+    GetPage(name: AppRoutes.createCompany, page: () => CreateCompany(),),
+    
   ];
 }
