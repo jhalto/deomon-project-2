@@ -4,4 +4,6 @@ class AppRoutes {
   static String onBoarding9 = '/onBoarding9';
   static String onBoarding10 = '/onBoarding10';
   static String login = '/login';
+  static String role = '/role';
+  static String register = '/register';
 }

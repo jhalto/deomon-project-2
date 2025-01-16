@@ -1,4 +1,4 @@
-import 'package:demon_project_2/features/auth/views/login_view.dart';
+import 'package:demon_project_2/features/auth/views/login/view/login_view.dart';
 import 'package:demon_project_2/features/auth/widgets/login_bg.dart';
 import 'package:demon_project_2/route/app_pages.dart';
 import 'package:demon_project_2/splash/view/splash.dart';

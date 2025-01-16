@@ -3,11 +3,13 @@ import 'package:demon_project_2/core/const/bg_images.dart';
 import 'package:demon_project_2/core/global_widgets/custom_text_form_field.dart';
 import 'package:demon_project_2/core/global_widgets/media_query_size.dart';
 import 'package:demon_project_2/core/global_widgets/text_styles.dart';
-import 'package:demon_project_2/features/auth/controllers/auth_controller.dart';
+import 'package:demon_project_2/features/auth/views/login/controller/auth_controller.dart';
 import 'package:demon_project_2/features/auth/widgets/login_bg.dart';
+import 'package:demon_project_2/route/app_pages.dart';
+import 'package:demon_project_2/route/routes.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import '../../../core/global_widgets/custom_button.dart';
+import '../../../../../core/global_widgets/custom_button.dart';
 
 class LoginView extends StatelessWidget {
   LoginView({super.key});
@@ -32,7 +34,7 @@ class LoginView extends StatelessWidget {
                 decoration: BoxDecoration(
                   boxShadow: [
                     BoxShadow(
-                      color: Colors.black.withOpacity(0.7), // Shadow color
+                      color: Colors.black.withValues(alpha: .7), // Shadow color
                       offset: Offset(0, 50), // Horizontal and vertical offset
                       blurRadius: 100, // How much the shadow blurs
                       spreadRadius: 100, // How much the shadow spreads
@@ -93,7 +95,9 @@ class LoginView extends StatelessWidget {
                       focusNode: controller.passWordNode,
                     ),
                     SizedBox(height: isKeyBoardOpen?10: 20),
-                    customButtonWidget(hint: "Login", function: () {}),
+                    customButtonWidget(hint: "Login", function: () {
+                      Get.toNamed(AppRoutes.role);
+                    }),
                     SizedBox(height: 20),
                     Align(
                       alignment: Alignment.center,
