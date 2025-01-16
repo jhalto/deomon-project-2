@@ -28,10 +28,9 @@ class RegisterScreen extends StatelessWidget {
         img: BgImagesPath.onBoarding10,
         widget: SizedBox(
           height: mHeight(context), // Ensure it takes full screen height
-          child: Container(
-            height: mHeight(context),
-            child: SingleChildScrollView(
-              
+          child: SingleChildScrollView(
+            child: Container(
+              height: mHeight(context),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.end, // Align children to the bottom
                 children: [
